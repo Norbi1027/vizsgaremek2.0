@@ -33,9 +33,9 @@ namespace vizsgaremek
                     if (username.Equals(reader.GetString("username")) && password.Equals(reader.GetString("password")))
                     {
 
-                        Dashboard dsb = new Dashboard();
+                        mennu menu = new mennu();
                         Form1 form1 = new Form1();
-                        dsb.Show();
+                        menu.Show();
                         this.Hide();
                         MessageBox.Show("Belépés sikeres!");
                         break;

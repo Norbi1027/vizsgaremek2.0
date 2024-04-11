@@ -5,7 +5,13 @@
     <Compile Update="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="felhasznalok.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mennu.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

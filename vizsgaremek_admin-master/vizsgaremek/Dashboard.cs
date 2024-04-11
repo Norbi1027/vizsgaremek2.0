@@ -67,20 +67,27 @@ namespace vizsgaremek
 
         private void update_brn_Click(object sender, EventArgs e)
         {
-            string mysqlconn = "server=127.0.0.1;user=root;database=soulpactum;password=";
-            MySqlConnection mySqlConnection = new MySqlConnection(mysqlconn);
-            mySqlConnection.Open();
-            MySqlCommand cmd = new MySqlCommand("update rendeles set userid=@userid, rendeles_id=@rendeles_id, datum=@datum, osszeg=@osszeg WHERE rendeles_id = " + rendeles_id_tb.Text, mySqlConnection);
-            //cmd.Parameters.AddWithValue("@rendeles_id", int.Parse(rendeles_id_tb.Text));
-            cmd.Parameters.AddWithValue("@userid", int.Parse(user_id_tb.Text));
-            cmd.Parameters.AddWithValue("@rendeles_id", int.Parse(skin_id_tb.Text));
-            cmd.Parameters.AddWithValue("@datum", (datum_tb.Text));
-            cmd.Parameters.AddWithValue("@osszeg", int.Parse(osszeg_tb.Text));
-            cmd.ExecuteNonQuery();
+            try
+            {
+                string mysqlconn = "server=127.0.0.1;user=root;database=soulpactum;password=";
+                MySqlConnection mySqlConnection = new MySqlConnection(mysqlconn);
+                mySqlConnection.Open();
+                MySqlCommand cmd = new MySqlCommand("update rendeles set userid=@userid, rendeles_id=@rendeles_id, datum=@datum, osszeg=@osszeg WHERE rendeles_id = " + rendeles_id_tb.Text, mySqlConnection);
+                //cmd.Parameters.AddWithValue("@rendeles_id", int.Parse(rendeles_id_tb.Text));
+                cmd.Parameters.AddWithValue("@userid", int.Parse(user_id_tb.Text));
+                cmd.Parameters.AddWithValue("@rendeles_id", int.Parse(skin_id_tb.Text));
+                cmd.Parameters.AddWithValue("@datum", DateTime.Parse(datum_tb.Text));
+                cmd.Parameters.AddWithValue("@osszeg", int.Parse(osszeg_tb.Text));
+                cmd.ExecuteNonQuery();
 
 
-            mySqlConnection.Close();
-            MessageBox.Show("Sikeresen átírva!");
+                mySqlConnection.Close();
+                MessageBox.Show("Sikeresen átírva!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hiba történt: " + ex.Message);
+            }
         }
 
         private void delete_btn_Click(object sender, EventArgs e)
@@ -150,6 +157,27 @@ namespace vizsgaremek
         private void exit_btn_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            mennu menu = new mennu();
+            menu.Show();
+            this.Close();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+
+                rendeles_id_tb.Text = row.Cells["rendeles_id"].Value.ToString();
+                user_id_tb.Text = row.Cells["userid"].Value.ToString();
+                skin_id_tb.Text = row.Cells["rendeles_id"].Value.ToString();
+                datum_tb.Text = row.Cells["datum"].Value.ToString();
+                osszeg_tb.Text = row.Cells["osszeg"].Value.ToString();
+            }
         }
     }
 }

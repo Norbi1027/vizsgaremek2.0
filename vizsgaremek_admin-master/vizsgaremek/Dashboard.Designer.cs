@@ -46,6 +46,7 @@
             clear_btn = new Button();
             log_out_btn = new Button();
             exit_btn = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -136,11 +137,12 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.GridColor = SystemColors.Menu;
-            dataGridView1.Location = new Point(69, 398);
+            dataGridView1.Location = new Point(43, 413);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(659, 180);
             dataGridView1.TabIndex = 13;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // search_btn
             // 
@@ -222,11 +224,22 @@
             exit_btn.UseVisualStyleBackColor = true;
             exit_btn.Click += exit_btn_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(713, 55);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 22;
+            button1.Text = "MENU";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 605);
+            Controls.Add(button1);
             Controls.Add(exit_btn);
             Controls.Add(log_out_btn);
             Controls.Add(clear_btn);
@@ -273,5 +286,6 @@
         private Button clear_btn;
         private Button log_out_btn;
         private Button exit_btn;
+        private Button button1;
     }
 }

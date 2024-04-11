@@ -35,3 +35,5 @@ C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\n
 C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\net6.0-windows\vizsgaremek.pdb
 C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\net6.0-windows\vizsgaremek.genruntimeconfig.cache
 C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\net6.0-windows\ref\vizsgaremek.dll
+C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\net6.0-windows\vizsgaremek.felhasznalok.resources
+C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\net6.0-windows\vizsgaremek.mennu.resources
