@@ -20,7 +20,7 @@ namespace vizsgaremek
         private void button1_Click(object sender, EventArgs e)
         {
             mennu menu = new mennu();
-            Dashboard dsb = new Dashboard();
+            Rendelések dsb = new Rendelések();
             dsb.Show();
             this.Hide();
         }

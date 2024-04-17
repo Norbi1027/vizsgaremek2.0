@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace vizsgaremek
 {
-    public partial class Dashboard : Form
+    public partial class Rendelések : Form
     {
-        public Dashboard()
+        public Rendelések()
         {
             InitializeComponent();
         }
@@ -148,7 +148,7 @@ namespace vizsgaremek
 
         private void log_out_btn_Click(object sender, EventArgs e)
         {
-            Dashboard dsb = new Dashboard();
+            Rendelések dsb = new Rendelések();
             this.Close();
             Form1 form1 = new Form1();
             form1.Show();

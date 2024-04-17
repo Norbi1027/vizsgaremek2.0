@@ -22,7 +22,6 @@ C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\bin\Debug\n
 C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\net6.0-windows\vizsgaremek.csproj.AssemblyReference.cache
-C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\net6.0-windows\vizsgaremek.Dashboard.resources
 C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\net6.0-windows\vizsgaremek.Form1.resources
 C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\net6.0-windows\vizsgaremek.csproj.GenerateResource.cache
 C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\net6.0-windows\vizsgaremek.GeneratedMSBuildEditorConfig.editorconfig
@@ -37,3 +36,4 @@ C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\n
 C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\net6.0-windows\ref\vizsgaremek.dll
 C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\net6.0-windows\vizsgaremek.felhasznalok.resources
 C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\net6.0-windows\vizsgaremek.mennu.resources
+C:\Users\sandor.norbert\Desktop\vizsgaremek_admin-master\vizsgaremek\obj\Debug\net6.0-windows\vizsgaremek.Rendelések.resources

@@ -1,11 +1,14 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Drawing.Text;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace vizsgaremek
 {
     public partial class Form1 : Form
     {
+        public bool aSD = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -14,7 +17,7 @@ namespace vizsgaremek
         private void login_Click(object sender, EventArgs e)
         {
 
-            string mysqlconn = "server=127.0.0.1;user=root;database=soulpactum;password=";
+            string mysqlconn = "server=localhost;user=root;database=soulpactum;password=";
             MySqlConnection mySqlConnection = new MySqlConnection(mysqlconn);
 
             string username = username_textbox.Text.ToString();
@@ -25,28 +28,31 @@ namespace vizsgaremek
             }
             else
             {
-                mySqlConnection.Open();
+                try
+                {
+                    mySqlConnection.Open();
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
                 MySqlCommand mySqlCommand = new MySqlCommand("select * from users where username = '"+username_textbox.Text+"' AND password='"+password_textbox.Text+"'", mySqlConnection);
                 MySqlDataReader reader = mySqlCommand.ExecuteReader();
-                while (reader.Read())
+                if (reader.Read())
                 {
-                    if (username.Equals(reader.GetString("username")) && password.Equals(reader.GetString("password")))
-                    {
-
-                        mennu menu = new mennu();
-                        Form1 form1 = new Form1();
-                        menu.Show();
-                        this.Hide();
-                        MessageBox.Show("Belépés sikeres!");
-                        break;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Sikertelen bejelentkezés!");
-                        break;
-                    }
-
+                    MessageBox.Show("Belépés sikeres!");
+                    mennu menu = new mennu();
+                    menu.Show();
+                    this.Hide();
                 }
+                else
+                {
+                    MessageBox.Show("Sikertelen bejelentkezés!");
+                }
+
+                reader.Close();
+            }                    
                 mySqlConnection.Close();
             }
 
@@ -54,4 +60,3 @@ namespace vizsgaremek
 
         }
     }
-}

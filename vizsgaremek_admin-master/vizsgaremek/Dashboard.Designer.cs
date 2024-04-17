@@ -1,6 +1,6 @@
 ﻿namespace vizsgaremek
 {
-    partial class Dashboard
+    partial class Rendelések
     {
         /// <summary>
         /// Required designer variable.
@@ -52,7 +52,7 @@
             // 
             // rendeles_id_tb
             // 
-            rendeles_id_tb.Location = new Point(240, 106);
+            rendeles_id_tb.Location = new Point(319, 110);
             rendeles_id_tb.Multiline = true;
             rendeles_id_tb.Name = "rendeles_id_tb";
             rendeles_id_tb.Size = new Size(280, 25);
@@ -60,7 +60,7 @@
             // 
             // user_id_tb
             // 
-            user_id_tb.Location = new Point(240, 154);
+            user_id_tb.Location = new Point(319, 158);
             user_id_tb.Multiline = true;
             user_id_tb.Name = "user_id_tb";
             user_id_tb.Size = new Size(280, 25);
@@ -68,7 +68,7 @@
             // 
             // skin_id_tb
             // 
-            skin_id_tb.Location = new Point(240, 201);
+            skin_id_tb.Location = new Point(319, 205);
             skin_id_tb.Multiline = true;
             skin_id_tb.Name = "skin_id_tb";
             skin_id_tb.Size = new Size(280, 25);
@@ -76,7 +76,7 @@
             // 
             // datum_tb
             // 
-            datum_tb.Location = new Point(240, 248);
+            datum_tb.Location = new Point(319, 252);
             datum_tb.Multiline = true;
             datum_tb.Name = "datum_tb";
             datum_tb.Size = new Size(280, 20);
@@ -84,7 +84,7 @@
             // 
             // osszeg_tb
             // 
-            osszeg_tb.Location = new Point(240, 287);
+            osszeg_tb.Location = new Point(319, 291);
             osszeg_tb.Multiline = true;
             osszeg_tb.Name = "osszeg_tb";
             osszeg_tb.Size = new Size(280, 20);
@@ -94,7 +94,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(56, 106);
+            label1.Location = new Point(135, 110);
             label1.Name = "label1";
             label1.Size = new Size(178, 25);
             label1.TabIndex = 5;
@@ -102,7 +102,7 @@
             // 
             // insert_btn
             // 
-            insert_btn.Location = new Point(170, 369);
+            insert_btn.Location = new Point(216, 361);
             insert_btn.Name = "insert_btn";
             insert_btn.Size = new Size(75, 23);
             insert_btn.TabIndex = 10;
@@ -112,7 +112,7 @@
             // 
             // update_brn
             // 
-            update_brn.Location = new Point(251, 369);
+            update_brn.Location = new Point(297, 361);
             update_brn.Name = "update_brn";
             update_brn.Size = new Size(75, 23);
             update_brn.TabIndex = 11;
@@ -122,7 +122,7 @@
             // 
             // delete_btn
             // 
-            delete_btn.Location = new Point(332, 369);
+            delete_btn.Location = new Point(378, 361);
             delete_btn.Name = "delete_btn";
             delete_btn.Size = new Size(75, 23);
             delete_btn.TabIndex = 12;
@@ -137,7 +137,7 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.GridColor = SystemColors.Menu;
-            dataGridView1.Location = new Point(43, 413);
+            dataGridView1.Location = new Point(67, 413);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(659, 180);
@@ -146,7 +146,7 @@
             // 
             // search_btn
             // 
-            search_btn.Location = new Point(413, 369);
+            search_btn.Location = new Point(459, 361);
             search_btn.Name = "search_btn";
             search_btn.Size = new Size(75, 23);
             search_btn.TabIndex = 14;
@@ -158,7 +158,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(32, 154);
+            label2.Location = new Point(111, 158);
             label2.Name = "label2";
             label2.Size = new Size(202, 25);
             label2.TabIndex = 15;
@@ -168,7 +168,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(69, 201);
+            label3.Location = new Point(148, 205);
             label3.Name = "label3";
             label3.Size = new Size(165, 25);
             label3.TabIndex = 16;
@@ -178,7 +178,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(162, 248);
+            label4.Location = new Point(241, 252);
             label4.Name = "label4";
             label4.Size = new Size(72, 25);
             label4.TabIndex = 17;
@@ -188,7 +188,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(158, 282);
+            label5.Location = new Point(237, 286);
             label5.Name = "label5";
             label5.Size = new Size(76, 25);
             label5.TabIndex = 18;
@@ -196,7 +196,7 @@
             // 
             // clear_btn
             // 
-            clear_btn.Location = new Point(494, 369);
+            clear_btn.Location = new Point(540, 361);
             clear_btn.Name = "clear_btn";
             clear_btn.Size = new Size(75, 23);
             clear_btn.TabIndex = 19;
@@ -234,7 +234,7 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // Dashboard
+            // Rendelések
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -258,9 +258,9 @@
             Controls.Add(skin_id_tb);
             Controls.Add(user_id_tb);
             Controls.Add(rendeles_id_tb);
-            Name = "Dashboard";
+            Name = "Rendelések";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Dashboard";
+            Text = "Rendelések";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

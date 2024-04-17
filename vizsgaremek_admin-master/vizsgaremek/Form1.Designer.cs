@@ -49,6 +49,7 @@
             password_textbox.Location = new Point(148, 156);
             password_textbox.Multiline = true;
             password_textbox.Name = "password_textbox";
+            password_textbox.PasswordChar = '*';
             password_textbox.Size = new Size(214, 25);
             password_textbox.TabIndex = 1;
             // 
@@ -87,9 +88,9 @@
             label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(42, 156);
             label3.Name = "label3";
-            label3.Size = new Size(98, 25);
+            label3.Size = new Size(95, 25);
             label3.TabIndex = 5;
-            label3.Text = "PassWord:";
+            label3.Text = "Password:";
             // 
             // Form1
             // 
